@@ -1,0 +1,11 @@
+{
+  "name": "todos",
+  "version": "0.0.0",
+  "description": "",
+  "author": "Gregory Peres Serrão",
+  "license": "MIT",
+  "devDependencies": {
+    "mongoose": "^3.8.14",
+    "restify": "^2.8.2"
+  }
+}
