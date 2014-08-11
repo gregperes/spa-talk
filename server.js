@@ -20,7 +20,7 @@ var server = restify.createServer({
 });
 
 server.use(restify.CORS({
-  origins: ['*']
+  origins: ["http://localhost:3000"]
 }));
 
 server.use(restify.acceptParser(server.acceptable));
@@ -83,7 +83,7 @@ server.put("/todos/:id", function (req, res) {
 
     if (!err) {
 
-      todo.completed = true;
+      todo.completed = !todo.completed;
       todo.save();
 
       res.send(200, todo);
